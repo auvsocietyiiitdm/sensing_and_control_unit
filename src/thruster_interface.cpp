@@ -1,7 +1,7 @@
 
 #include "thruster_interface.hpp"
-#include Servo.h
-#define NO_OF_THRUSTERS=7;
+#include <Servo.h>
+#define NO_OF_THRUSTERS 7
 
   //declaring an array of servo objects for the thrusters
 Servo thrusters[NO_OF_THRUSTERS];
