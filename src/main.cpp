@@ -1,7 +1,7 @@
 #include "main.hpp"
 
-int16_t ax, ay, az, gx, gy, gz, mx, my, mz, depth;
-float roll, pitch, yaw;
+int16_t ax, ay, az, gx, gy, gz, mx, my, mz;
+float roll, pitch, yaw, depth;
 int16_t current_mode = 0;
 void setup() {
   initializeCommunication();
