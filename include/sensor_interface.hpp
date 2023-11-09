@@ -1,5 +1,8 @@
 #ifndef SENSOR_INTERFACE_HPP
 #define SENSOR_INTERFACE_HPP
+#include "Adafruit_FXAS21002C.h"
+#include "Adafruit_FXOS8700.h"
+#include "MS5837.h"
 #include <Arduino.h>
 inline void initializeIMU();
 inline void initializeDepthSensor();
