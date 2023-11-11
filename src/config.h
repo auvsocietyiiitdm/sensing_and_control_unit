@@ -1,2 +1,0 @@
-#define NO_OF_THRUSTERS 7
-#define INIT_THRUSTER_PWM 1472
