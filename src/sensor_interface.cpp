@@ -15,12 +15,7 @@ MS5837 depth_sensor;
     gyro.setAccelerometerRange(ACCELERO_METER_RANGE_2);
     gyro.setGyroscopeRange(GYROSCOPE_RANGE_250);
     gyro.setSampleRateDivider(0);
-    gyro.disableSleepMode();
-    if(accelmag_status)
-      Serial.println("FXOS8700 connection successfull");
-    else
-      Serial.println("FXOS8700 connection Failed..!");
-      
+    gyro.disableSleepMode();      
     while(!accelmag_status)
     {
     bool accelmag_status= accelmag.begin();
@@ -31,10 +26,10 @@ MS5837 depth_sensor;
 {
     bool depth_sensor_status= depth_sensor.init();
 
-    if(depth_sensor_status)
-      Serial.println("MS5837 Connection successful");
-    else
-      Serial.println("MS5837 Connection Failed..!");
+    while(!depth_sensor_status)
+    {
+      bool depth_sensor_status= depth_sensor.init();
+    }
     
     depth_sensor.setFluidDensity(997); // kg/m^3 (freshwater, 1029 for seawater)
 }
