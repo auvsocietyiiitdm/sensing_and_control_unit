@@ -1,14 +1,14 @@
  #include "communication_interface.hpp"
 
-inline void initializeCommunication() {
+ void initializeCommunication() {
 }
 
-inline void sendOrientation(float roll, float pitch, float yaw) {
+ void sendOrientation(float roll, float pitch, float yaw) {
 }
 
-inline void sendDepth(float depth) {
+ void sendDepth(float depth) {
 }
 
-inline void sendIMUReadings(float ax, float ay, float az, float gx, float gy, float gz, float mx, float my, float mz) {
+ void sendIMUReadings(float ax, float ay, float az, float gx, float gy, float gz, float mx, float my, float mz) {
 }
 

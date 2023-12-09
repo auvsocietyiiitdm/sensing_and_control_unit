@@ -1,7 +1,7 @@
 #include "thruster_interface.hpp"
 #include <Arduino.h>
-inline void initializeThrusters() {
+void initializeThrusters() {
 }
 
-inline void setThrusterThrottles(int8_t throttles[]) {
+void setThrusterThrottles(int8_t throttles[]) {
 }
